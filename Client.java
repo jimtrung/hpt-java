@@ -11,8 +11,6 @@ public class Client {
         System.out.print("Nhập IP của server: ");
         String serverIP = sc.next();  
 
-        // host = "10.43.165.169"; 
-
         Socket socket = new Socket(serverIP, port);
 
         BufferedReader in = new BufferedReader( new InputStreamReader(socket.getInputStream(), "UTF-8"));
